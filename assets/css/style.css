@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap");
+
+:root {
+  --primary-color: rgb(102, 42, 51);
+  --color2: rgb(222, 208, 210);
+  --color3: rgb(181, 65, 82);
+  --color4: rgb(103, 171, 107);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "Open sans", sans-serif;
+  line-height: 1.5em;
+  font-size: 1.3em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: var(--color2);
+  padding: 20px;
+  border-radius: 10px;  
+}
+
+.subcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.buttons{
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+}
+button{
+  background: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 5px;
+  width: 90px;  
+}
+
+button:hover{
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  background-color: var(--color4);
+}
+
+.title{
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.new-tasks{
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.new-task{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.erase-btn{
+  padding: 0;
+  height: 25px;
+  width: 60px;
+}
+
+.erase-btn:hover{
+  background-color: var(--color3);
+}
